@@ -1,0 +1,22 @@
+{
+  "name": "frontend-database",
+  "version": "1.0.0",
+  "description": "Frontend framework to interact with backend database",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "start": "npx webpack"
+  },
+  "author": "gshatakishvili@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "dotenv-webpack": "^7.1.0"
+  }
+}
