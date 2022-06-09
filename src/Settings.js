@@ -1,10 +1,10 @@
 
 export default class Settings {
     static getUserToken() {
-        return process.env.token
+        return process.env.TOKEN
     }
 
     static getAPIBaseUrl() {
-        return process.env.api_url
+        return process.env.API_URL
     }
 }
