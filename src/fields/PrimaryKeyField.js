@@ -1,9 +1,8 @@
 import TableField from "./TableField";
 
 export default class PrimaryKeyField extends TableField {
-    constructor({length = 11, }) {
+    constructor({}) {
         super()
-        this.length = length
     }
 
     getFieldName() {
@@ -12,11 +11,10 @@ export default class PrimaryKeyField extends TableField {
 
     getFieldParams() {
         return {
-            length: this.length,
         }
     }
 }
 
-export function primaryKeyField({length, ...props} = {}) {
-    return new PrimaryKeyField({length, ...props})
+export function primaryKeyField({} = {}) {
+    return new PrimaryKeyField({})
 }
