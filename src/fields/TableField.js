@@ -10,7 +10,7 @@ export default class TableField {
 
     getFieldInfo() {
         return {
-            name: this.getFieldName(),
+            type: this.getFieldName(),
             params: this.getFieldParams(),
         }
     }
