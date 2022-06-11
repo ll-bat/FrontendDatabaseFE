@@ -21,6 +21,6 @@ export default class CharField extends TableField {
     }
 }
 
-export function charField({length, ...props} = {}) {
-    return new CharField({length, ...props})
+export function charField({length, nullable, default_value} = {}) {
+    return new CharField({length, nullable, default_value})
 }
